@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HoodHaven</title>
-    </head> 
+<head>
+    <title>ENSF381</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
 <body>
-    <header>
         <center>
-        <table border="0">
-            <tr>
-                <td>
-                    <img src="images/logo.png", alt="'Website logo"width="175px">
-                </td>
-                <td>
-                    <tittle><h1>HoodHaven</h1></tittle>
- 
-                </td>
-            </tr>
-        </table>
-    </center>
-    </header>
-    <center>
-        <br><br>
-    <div>
-        <a href="index.html">Home Page</a>
-        <a href="products.html">Product page</a>
-        <a href="contact.html">Contact page</a><br><br><br>
-    </div>
+            <header>
+              <img src="images/logo.png" alt="Website Logo" width="100px">
+              <h2 style="color: white;">HoodHaven</h2>
+            </header>
+            <div>
+                <a href= "index.html">Home</a>
+                <a href="contact.html">   Contact Info</a>
+                <a href="products.html">   Product Page</a>
+            </div>
+          </center>
     <main>
-         <form action="#" method="post">
-              <label for="username">Username:</label>
-             <input type="text" id="username" name="username" required><br>
-    
-             <label for="password">Password:</label>
-             <input type="password" id="password" name="password" required><br>
-    
-             <input type="submit" value="Login"><br>
-        </form>
-        <p>Don't have an account? <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=http%3A%2F%2Fsupport.google.com%2Fmail%2Fanswer%2F56256%3Fhl%3Den&ec=GAlAdQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-989024560%3A1707164552438208&theme=glif">Sign Up</a></p><br><br>
-     </main> 
-    </center>
-     <footer style="text-align: center;">
+        <section class="login-form">
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+                <section class="shop-now">
+                    <input type="submit" value="Login"><br>
+                </section>
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </form>
+        </section>
+    </main> 
+    <footer>
         &copy; 2024 HoodHaven. All rights reserved.
     </footer>  
 </body>
