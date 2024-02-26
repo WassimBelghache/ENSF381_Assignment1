@@ -3,45 +3,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <header>
-        <center>
-        <table border="0">
-            <tr>
-                <td>
-                    <img src="images/logo.png", alt="'Website logo"width="175px">
-                </td>
-                <td>
-                    <tittle><h1>HoodHaven</h1></tittle>
- 
-                </td>
-            </tr>
-        </table>
-    </center>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+        <img src="images/logo.png" alt="Website Logo" width="100px">
+        <h2 style="color: white;">HoodHaven</h2>
     </header>
 
-<body>
+<body >
     <center><div>
-        <a href= "index.html">Home</a>
-        <a href= "contact.html">Contacts</a>
-        <a href="products.html">Products</a>
-        <a href="login.html">Login</a>
+        <a href= "index.html">Home Page</a>
+        <a href= "contact.html">Contact Info</a>
+        <a href="login.html">Login Page</a>
     </div></center>
 
-    <main>
+    <main class="productsPage">
         <center><p> 16 products </p><br> 
         <h2>Pullover Hoodies</h2><br>
     
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/pullover1.png", alt="hoodie1", width="275px">
+            <img class = "product-image" src="images/pullover1.png", alt="hoodie1", width="275px">
             <h4>Pink Hoodie</h4>
-            <p>$19.99</p>
-            <button onclick="addToCart('hoodie1')">Add to Cart</button>
+            <p class="product-price">$19.99</p>
+            <button onclick="addToCart('hoodie1')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/pullover2.png", alt="hoodie2", width="200px">
+            <img class = "product-image" src="images/pullover2.png", alt="hoodie2", width="200px">
             <h4>Green Hoodie</h4>
-            <p>$19.99</p>
-            <button onclick="addToCart('hoodie2')">Add to Cart</button>
+            <p class="product-price">$19.99</p>
+            <button onclick="addToCart('hoodie2')"class="addToCart">Add to Cart</button>
         </div>
 
 
@@ -49,83 +40,83 @@
         <br><h2>Zipup Hoodies</h2><br>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/zipup1.jpg" alt="zipup1" width="250px">
+            <img class = "product-image" src="images/zipup1.jpg" alt="zipup1" width="250px">
             <h4>Blue Zipup</h4>
-            <p>$24.99</p>
-            <button onclick="addToCart('zipup1')">Add to Cart</button>
+            <p class="product-price">$24.99</p>
+            <button onclick="addToCart('zipup1')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/zipup2.jpg" alt="zipup2" width="270px">
+            <img class = "product-image" src="images/zipup2.jpg" alt="zipup2" width="270px">
             <h4>Purple Zipup</h4>
-            <p>$24.99</p>
-            <button onclick="addToCart('zipup2')">Add to Cart</button>
+            <p class="product-price">$24.99</p>
+            <button onclick="addToCart('zipup2')"class="addToCart">Add to Cart</button>
         </div>
 
         <br><br><br>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/zipup3.jpg" alt="zipup3" width="250px">
+            <img class = "product-image" src="images/zipup3.jpg" alt="zipup3" width="250px">
             <h4>White Zipup</h4>
-            <p>$24.99</p>
-            <button onclick="addToCart('zipup3')">Add to Cart</button>
+            <p class="product-price">$24.99</p>
+            <button onclick="addToCart('zipup3')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/zipup4.jpg" alt="zipup4" width="180px">
+            <img class = "product-image" src="images/zipup4.jpg" alt="zipup4" width="180px">
             <h4>Grey Zipup</h4>
-            <p>$24.99</p>
-            <button onclick="addToCart('zipup4')">Add to Cart</button>
+            <p class="product-price">$24.99</p>
+            <button onclick="addToCart('zipup4')"class="addToCart">Add to Cart</button>
         </div>
         <br>
 
         <br><h2>Cropped Hoodies</h2><br>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/crop1.jpg" alt="crop1" width="220px">
+            <img class = "product-image" src="images/crop1.jpg" alt="crop1" width="220px">
             <h4>Black and White Cropped Hoodie</h4>
-            <p>$29.99</p>
-            <button onclick="addToCart('crop1')">Add to Cart</button>
+            <p class="product-price">$29.99</p>
+            <button onclick="addToCart('crop1')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/crop2.jpg" alt="crop2" width="220px">
+            <img class = "product-image" src="images/crop2.jpg" alt="crop2" width="220px">
             <h4>Blue Cropped Hoodie</h4>
-            <p>$29.99</p>
-            <button onclick="addToCart('crop2')">Add to Cart</button>
+            <p class="product-price">$29.99</p>
+            <button onclick="addToCart('crop2')"class="addToCart">Add to Cart</button>
         </div>
 
         <br><br><br>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/crop3.jpg" alt="crop3" width="175px">
+            <img class = "product-image" src="images/crop3.jpg" alt="crop3" width="175px">
             <h4>White Cropped Hoodie</h4>
-            <p>$29.99</p>
-            <button onclick="addToCart('crop3')">Add to Cart</button>
+            <p class="product-price">$29.99</p>
+            <button onclick="addToCart('crop3')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/crop4.jpg" alt="crop4" width="185px">
+            <img class = "product-image" src="images/crop4.jpg" alt="crop4" width="185px">
             <h4>Grey Cropped Hoodie</h4>
-            <p>$29.99</p>
-            <button onclick="addToCart('crop4')">Add to Cart</button>
+            <p class="product-price">$29.99</p>
+            <button onclick="addToCart('crop4')"class="addToCart">Add to Cart</button>
         </div>
 
     
         <br><h2>Quarter Zip Hoodies</h2><br>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/quarter2.jpg" alt="quarterzip2" width="200px">
+            <img class = "product-image" src="images/quarter2.jpg" alt="quarterzip2" width="200px">
             <h4>Grey Quarter Zip Hoodie</h4>
-            <p>$14.99</p>
-            <button onclick="addToCart('quarterzip2')">Add to Cart</button>
+            <p class="product-price">$14.99</p>
+            <button onclick="addToCart('quarterzip2')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/quarter1.jpg" alt="quarterzip1" width="250px">
+            <img class = "product-image" src="images/quarter1.jpg" alt="quarterzip1" width="250px">
             <h4>Orange Quarter Zip Hoodie</h4>
-            <p>$14.99</p>
-            <button onclick="addToCart('quarterzip1')">Add to Cart</button>
+            <p class="product-price">$14.99</p>
+            <button onclick="addToCart('quarterzip1')"class="addToCart">Add to Cart</button>
         </div>
 
 
@@ -133,33 +124,65 @@
         <br><h2>Graphic Hoodies</h2><br>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/graphic1.jpg" alt="graphic1" width="200px">
+            <img class = "product-image" src="images/graphic1.jpg" alt="graphic1" width="200px">
             <h4>White Graphic Hoodie</h4>
-            <p>$27.99</p>
-            <button onclick="addToCart('graphic1')">Add to Cart</button>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic1')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/graphic2.jpg" alt="graphic2" width="200px">
+            <img class = "product-image" src="images/graphic2.jpg" alt="graphic2" width="200px">
             <h4>Hogwarts Hoodie</h4>
-            <p>$27.99</p>
-            <button onclick="addToCart('graphic2')">Add to Cart</button>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic2')"class="addToCart">Add to Cart</button>
         </div>
 
         <br>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/graphic3.jpg" alt="graphic3" width="300px">
+            <img class = "product-image" src="images/graphic3.jpg" alt="graphic3" width="300px">
             <h4>Black Graphic Image Hoodie</h4>
-            <p>$27.99</p>
-            <button onclick="addToCart('graphic3')">Add to Cart</button>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic3')"class="addToCart">Add to Cart</button>
         </div>
 
         <div class="product" style="display: inline-block; margin-right: 10px;">
-            <img src="images/graphic4.jpg" alt="graphic4" width="200px">
+            <img class = "product-image" src="images/graphic4.jpg" alt="graphic4" width="200px">
             <h4>Black Graphic Text Hoodie</h4>
-            <p>$27.99</p>
-            <button onclick="addToCart('graphic4')">Add to Cart</button>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic4')"class="addToCart">Add to Cart</button>
+        </div>
+
+        <br>
+
+        <div class="product" style="display: inline-block; margin-right: 10px;">
+            <img class = "product-image" src="images/graphic5.jpg" alt="graphic5" width="200px">
+            <h4>Cream Graphic Mickey Hoodie</h4>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic4')"class="addToCart">Add to Cart</button>
+        </div>
+
+        <div class="product" style="display: inline-block; margin-right: 10px;">
+            <img class = "product-image" src="images/graphic6.jpg" alt="graphic6" width="200px">
+            <h4>Black Graphic Mickey Hoodie</h4>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic4')"class="addToCart">Add to Cart</button>
+        </div>
+
+        <br>
+
+        <div class="product" style="display: inline-block; margin-right: 10px;">
+            <img class = "product-image" src="images/graphic7.jpg" alt="graphic7" width="200px">
+            <h4>Green Graphic Mickey Hoodie</h4>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic4')"class="addToCart">Add to Cart</button>
+        </div>
+
+        <div class="product" style="display: inline-block; margin-right: 10px;">
+            <img class = "product-image" src="images/graphic8.jpg" alt="graphic8" width="200px">
+            <h4>Blue Graphic Lilo Hoodie</h4>
+            <p class="product-price">$27.99</p>
+            <button onclick="addToCart('graphic4')" class="addToCart">Add to Cart</button>
         </div>
 
     </center>
@@ -205,5 +228,13 @@ https://www.google.com/imgres?imgurl=https%3A%2F%2Fakkustomed.com%2Fcdn%2Fshop%2
 https://www.google.com/imgres?imgurl=https%3A%2F%2Fgate.bwcdn.net%2Fmedia%2F2022%2F10%2F6%2F4%2Fkratka-zakladna-mikina-s-kapucnou-damska-6208454-68-6419603-size-small-c-v-1-compressed.jpg&tbnid=acwwd18jHhsZgM&vet=10CAoQxiAoB2oXChMI2JrF2_yUhAMVAAAAAB0AAAAAEAs..i&imgrefurl=https%3A%2F%2Fgate.shop%2Fcropped-hoodie-6208454-68&docid=B4wVy1eBaVctkM&w=150&h=200&itg=1&q=cropped%20hoodies&ved=0CAoQxiAoB2oXChMI2JrF2_yUhAMVAAAAAB0AAAAAEAs
 
 https://www.google.com/imgres?imgurl=https%3A%2F%2Fgate.bwcdn.net%2Fmedia%2F2022%2F10%2F6%2F4%2Fkratka-zakladna-mikina-s-kapucnou-damska-6208454-68-6419603-size-small-c-v-1-compressed.jpg&tbnid=acwwd18jHhsZgM&vet=10CAoQxiAoB2oXChMI2JrF2_yUhAMVAAAAAB0AAAAAEAs..i&imgrefurl=https%3A%2F%2Fgate.shop%2Fcropped-hoodie-6208454-68&docid=B4wVy1eBaVctkM&w=150&h=200&itg=1&q=cropped%20hoodies&ved=0CAoQxiAoB2oXChMI2JrF2_yUhAMVAAAAAB0AAAAAEAs
+
+https://www.google.com/search?q=graphic+hoodies+disnet&tbm=isch&ved=2ahUKEwjBz9qu3seEAxXbLDQIHex6BlwQ2-cCegQIABAA&oq=graphic+hoodies+disnet&gs_lp=EgNpbWciFmdyYXBoaWMgaG9vZGllcyBkaXNuZXRIoxRQvAJY_RJwAHgAkAEBmAHiAaABygeqAQU1LjIuMbgBA8gBAPgBAYoCC2d3cy13aXotaW1nwgIEECMYJ8ICBRAAGIAEiAYB&sclient=img&ei=ptnbZcHkJdvZ0PEP7PWZ4AU&bih=993&biw=1920&rlz=1C5CHFA_enCA1095CA1095#imgrc=9mCfA1C8h9a_CM 
+
+https://www.google.com/search?q=graphic+hoodies+disnet&tbm=isch&ved=2ahUKEwjBz9qu3seEAxXbLDQIHex6BlwQ2-cCegQIABAA&oq=graphic+hoodies+disnet&gs_lp=EgNpbWciFmdyYXBoaWMgaG9vZGllcyBkaXNuZXRIoxRQvAJY_RJwAHgAkAEBmAHiAaABygeqAQU1LjIuMbgBA8gBAPgBAYoCC2d3cy13aXotaW1nwgIEECMYJ8ICBRAAGIAEiAYB&sclient=img&ei=ptnbZcHkJdvZ0PEP7PWZ4AU&bih=993&biw=1920&rlz=1C5CHFA_enCA1095CA1095
+
+https://www2.hm.com/en_ca/productpage.0762471106.html
+
+
 
 -->

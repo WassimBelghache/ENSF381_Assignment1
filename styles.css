@@ -109,3 +109,85 @@ main p a {
     margin: 10px;
 }
 
+
+
+.product {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: calc(50% - 40px); /* Two products per line, considering padding and margin */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.product:hover {
+    background-color: #ffffff; /* Change background color on hover */
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.addToCart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.addToCart:hover {
+    background-color: #45A049; /* Change background color on hover */
+}
+
+main.productsPage {
+    background-color: #ddd;
+    margin: 20px;
+    padding: 20px;
+}
+
+main.contactsPage{
+    background-color: #ddd;
+    margin: 20px;
+    padding: 20px;
+}
+
+.left{
+    text-align: left;
+    background-color: #ddd;
+}
+
+.contactMessage{
+    background-color: #ddd;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.socialLink{
+    color: purple;
+}
+
+.socialLink:hover{
+    color: #007BFF;
+}
+
+.contact-method{
+    color: #007BFF;
+}
+
+.contact-method:hover{
+    color: purple;
+}
