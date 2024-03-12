@@ -267,65 +267,95 @@ main.contactsPage{
     background-color: #ff0000; /* Red color on hover for remove button */
 }
 
-.signup-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    opacity: 0.5;
-    cursor: pointer;
-    width: 100px; /* Set width to prevent it from stretching */
-}
 
-.signup-button:hover {
-    background-color: #45A049;
-    opacity: 1.0;
-}
+        /* Additional CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
 
 
 
-#messageBox {
-    border: 2px solid #f9f9f9;
-    background-color: #ddd;
-    padding: 10px;
-    margin: 20px;
-    display: none;
-}
+        .signup label {
+            display: block;
+            margin: 10px 0;
+        }
 
-main form {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .signup input[type="text"],
+        .signup input[type="password"],
+        .signup input[type="email"] {
+            background-color: #fff;
+            padding: 10px;
+            margin-left: 0;
+            border-radius: 5px;
+            width: 250px;
+            border: 1px solid #ccc;
+        }
 
-form label {
-    display: block;
-    margin: 10px;
-}
+        .signup-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            opacity: 0.5;
+            cursor: pointer;
+            width: 100px; /* Set width to prevent it from stretching */
+        }
 
-form input[type="text"],
-form input[type="password"],
-form input[type="email"] {
-    background-color: #fff; /* Apply background color only to the input fields */
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    width: calc(100% - 20px); /* Make the fields occupy full width with margin adjustment */
-    border: 1px solid #ccc; /* Add a light gray border to all input fields */
-}
+        .signup-button:hover {
+            background-color: #45A049;
+            opacity: 1.0;
+        }
 
-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: auto; /* Allow the button to adjust its width */
-    border: none; /* Remove the border around the signup button */
-}
+        .email-button-group {
+            display: flex;
+            align-items: center;
+            background-color: #ddd;
+        }
+
+        .signup {
+            background-color: #ddd;
+            padding: 30px;
+            margin: 20px auto; 
+            width: calc(100% - 100px); 
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #messageBox {
+            border: 2px solid #f9f9f9;
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 20px auto; 
+            width: calc(100% - 100px); 
+            display: none;
+        }
+
