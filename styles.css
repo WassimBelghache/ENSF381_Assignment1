@@ -115,14 +115,14 @@ main p a {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    width: calc(50% - 40px); /* Two products per line, considering padding and margin */
+    width: calc(50% - 40px); 
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
 }
 
 .product:hover {
-    background-color: #ffffff; /* Change background color on hover */
+    background-color: #ffffff; 
 }
 
 .product-image {
@@ -148,7 +148,7 @@ main p a {
 }
 
 .addToCart:hover {
-    background-color: #45A049; /* Change background color on hover */
+    background-color: #45A049; 
 }
 
 main.productsPage {
@@ -221,32 +221,31 @@ main.contactsPage{
 }
 
 .cart-display {
-    width: 100%; /* Full width of the container */
-    background-color: #ddd; /* Light grey background */
+    width: 100%; 
+    background-color: #ddd; 
     padding: 20px;
-    margin-top: 20px; /* Space between products and cart display */
+    margin-top: 20px; 
     border: 1px solid #ddd;
-    text-align: center; /* Center the content inside the cart */
-    /* Flex properties to center the cart */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .products-and-cart-container {
-    background-color: #ddd; /* Grey background */
+    background-color: #ddd; 
     padding: 20px;
     margin: 20px auto;
-    max-width: 1200px; /* Maximum width to manage the layout */
+    max-width: 1200px; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center children vertically if there's extra space */
+    align-items: center; 
+    justify-content: center; 
 }
 
 
 .removeFromCart, .addToCart {
-    background-color: #4CAF50; /* Primary button color */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     padding: 10px 15px;
@@ -260,118 +259,118 @@ main.contactsPage{
 }
 
 .removeFromCart:hover, .addToCart:hover {
-    background-color: #45A049 ; /* Darker shade for hover */
+    background-color: #45A049 ; 
 }
 
 .removeFromCart:hover {
-    background-color: #ff0000; /* Red color on hover for remove button */
+    background-color: #ff0000; 
 }
 
 
-        /* Additional CSS styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            padding: 10px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-
-
-        .signup label {
-            display: block;
-            margin: 10px 0;
-            text-align: right; /* Align labels to the right */
-        }
         
-        .signup input[type="text"],
-        .signup input[type="password"],
-        .signup input[type="email"] {
-            background-color: #fff;
-            padding: 10px;
-            margin-right: auto; /* Align right side of inputs to the right */
-            border-radius: 5px;
-            width: 250px;
-            border: 1px solid #ccc;
-            margin-left: auto; /* Align left side of inputs to the center */
-        }
-        
-        .signup {
-            background-color: #ddd;
-            padding: 30px;
-            margin: 20px auto; 
-            width: calc(100% - 100px); 
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Align content horizontally */
-            justify-content: center; /* Align content vertically */
-        }
-        
-        
-        .signup-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            margin: 10px;
-            opacity: 0.5;
-            cursor: pointer;
-            width: 100px; /* Set width to prevent it from stretching */
-        }
-        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .signup-button:hover {
-            background-color: #45A049;
-            opacity: 1.0;
-        }
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .email-button-group {
-            display: flex;
-            align-items: center;
-            background-color: #ddd;
-        }
+nav {
+    background-color: #444;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
 
-        .signup {
-            background-color: #ddd;
-            padding: 30px;
-            margin: 20px auto; 
-            width: calc(100% - 100px); 
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-        }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
 
-        #messageBox {
-            border: 2px solid #f9f9f9;
-            background-color: #f9f9f9;
-            padding: 10px;
-            margin: 20px auto; 
-            width: calc(100% - 100px); 
-            display: none;
-        }
+
+
+.signup label {
+    display: block;
+    margin: 10px 0;
+    text-align: right; 
+}
+
+.signup input[type="text"],
+.signup input[type="password"],
+.signup input[type="email"] {
+    background-color: #fff;
+    padding: 10px;
+    margin-right: auto; 
+    border-radius: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+    margin-left: auto; 
+}
+
+.signup {
+    background-color: #ddd;
+    padding: 30px;
+    margin: 20px auto; 
+    width: calc(100% - 100px); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.signup-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    width: 100px; 
+}
+
+
+.signup-button:hover {
+    background-color: #45A049;
+    opacity: 1.0;
+}
+
+.email-button-group {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.signup {
+    background-color: #ddd;
+    padding: 30px;
+    margin: 20px auto; 
+    width: calc(100% - 100px); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#messageBox {
+    border: 2px solid #f9f9f9;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 20px auto; 
+    width: calc(100% - 100px); 
+    display: none;
+}
 

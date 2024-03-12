@@ -1,3 +1,5 @@
+
+<!-- signup page -->
 <!DOCTYPE html>
 <html lang="en">
     <header>
@@ -20,18 +22,18 @@
         <section class="signup">  
             <form action="#" method="post" onsubmit="validateForm(); return false;">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required placeholder="Enter your username">
+                <input type="text" id="username" name="username" required placeholder="Enter username">
 
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <input type="password" id="password" name="password" required placeholder="Enter password">
 
                 <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Enter your password">
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Enter password">
 
                 <label for="email">Email:</label>
                 <div class="email-button-group">
-                    <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    <button type="submit" class="signup-button">Signup</button>
+                    <input type="email" id="email" name="email" required placeholder="Enter email">
+                    <button type="submit" class="signup-button">Sign-up</button>
                 </div>
             </form>
         </section>
@@ -63,12 +65,12 @@
             var passConMess = "";
             var emailMess = ""
             if (!usernamePattern.test(username)) {
-                userMess = "Invalid username.<br><br>";
+                userMess = "Check the username.<br><br>";
                 count++;
             }
             
             if (!passwordPattern.test(password)) {
-                passMess = "Invalid password.<br><br>";
+                passMess = "Check the password.<br><br>";
                 count++;
             }
             
@@ -78,11 +80,11 @@
             }
             
             if (!emailPattern.test(email)) {
-                emailMess = "Invalid email address.";
+                emailMess = "Check the email address.";
                 count++;
             }
             if(count === 0){
-                messageText.textContent = "Signup successful!";
+                messageText.textContent = "Sign-up successful!";
                 messageBox.style.display = "block";
             } else{
                 messageText.innerHTML  = userMess + passMess + passConMess + emailMess;
