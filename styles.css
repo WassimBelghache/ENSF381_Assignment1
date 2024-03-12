@@ -282,3 +282,58 @@ main.contactsPage{
             display: none;
         }
         
+
+
+        .cart-container {
+            margin-top: 50px;
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column; /* Change flex-direction to column */
+            align-items: center; /* Center items horizontally */
+        }
+        
+        .cart-container h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #333;
+            background-color: #ddd;
+        }
+        
+        .cart-items {
+            display: flex;
+            flex-direction: column; /* Change flex-direction to column */
+            align-items: center; /* Center items horizontally */
+        }
+        
+        .cart-item {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row; /* Ensure items align horizontally */
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Styling for the "Remove" button */
+        .removeButton {
+            background-color: #4CAF50; /* Default background color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        
+        /* Change background color on hover */
+        .removeButton:hover {
+            background-color: #ff0000; /* Background color on hover */
+        }
+        
+        .cart-item span {
+            background-color: #ddd;
+            padding: 3px 6px; /* Adjust padding as needed */
+            border-radius: 3px;
+        }
+        
