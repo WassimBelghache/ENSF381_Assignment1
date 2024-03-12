@@ -199,63 +199,6 @@ main.contactsPage{
 }
 
 /* added */
-.products-and-cart-container {
-    background-color: #f0f0f0; /* Grey background */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px; /* Maximum width to manage the layout */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center children vertically if there's extra space */
-}
-
-.cart-display {
-    width: 100%; /* Full width of the container */
-    background-color: #f2f2f2; /* Light grey background */
-    padding: 10px;
-    margin-top: 20px; /* Space between products and cart display */
-    border: 1px solid #ccc;
-    text-align: center; /* Center the content inside the cart */
-    /* Flex properties to center the cart */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.removeFromCart, .addToCart {
-    background-color: #007bff; /* Primary button color */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.removeFromCart:hover, .addToCart:hover {
-    background-color: #0056b3; /* Darker shade for hover */
-}
-
-.removeFromCart:hover {
-    background-color: #ff0000; /* Red color on hover for remove button */
-}
-
-.cart-items li {
-    list-style-type: none;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 1px solid #ddd;
-}
-
-.cart-items li:last-child {
-    border-bottom: none;
-}
 
 .product {
     border: 1px solid #ddd;
@@ -276,3 +219,51 @@ main.contactsPage{
 .product-price {
     font-weight: bold;
 }
+
+.cart-display {
+    width: 100%; /* Full width of the container */
+    background-color: #ddd; /* Light grey background */
+    padding: 20px;
+    margin-top: 20px; /* Space between products and cart display */
+    border: 1px solid #ddd;
+    text-align: center; /* Center the content inside the cart */
+    /* Flex properties to center the cart */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-and-cart-container {
+    background-color: #ddd; /* Grey background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Maximum width to manage the layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center children vertically if there's extra space */
+}
+
+
+.removeFromCart, .addToCart {
+    background-color: #4CAF50; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.removeFromCart:hover, .addToCart:hover {
+    background-color: #45A049 ; /* Darker shade for hover */
+}
+
+.removeFromCart:hover {
+    background-color: #ff0000; /* Red color on hover for remove button */
+}
+
