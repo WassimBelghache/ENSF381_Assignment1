@@ -1,4 +1,3 @@
-
 <!-- products.html-->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +17,7 @@
     </div></center>
 
     <main class="productsPage">
+        <div class="products-and-cart-container">
         <center><p> 16 products </p><br> 
         <h2>Pullover Hoodies</h2><br>
     
@@ -184,16 +184,73 @@
             <p class="product-price">$27.99</p>
             <button onclick="addToCart('graphic4')" class="addToCart">Add to Cart</button>
         </div>
-
-    </center>
         <br> <br> <br> 
+
+        <div id="cartDisplay" class="cart-display">
+            <h3>Cart Items</h3>
+            <ul id="cartItems"></ul>
+        </div>
+
     </main>
 
-</body>
-    <footer style="text-align: center;">
+</div>
+
+<footer style="text-align: center;">
     &copy; 2024 HoodHaven. All rights reserved.
-    </footer>
+</footer>
+
+    
+    <script>
+        class Cart {
+            constructor() {
+                this.items = {};
+            }
+
+            addItem(name, price) {
+                if (this.items[name]) {
+                    this.items[name].quantity++;
+                } else {
+                    this.items[name] = { price: parseFloat(price), quantity: 1 };
+                }
+                this.updateCart();
+                alert(`${name} added to cart.`);
+            }
+
+            removeItem(name) {
+                if (this.items[name] && this.items[name].quantity > 1) {
+                    this.items[name].quantity--;
+                } else {
+                    delete this.items[name];
+                }
+                this.updateCart();
+            }
+
+            updateCart() {
+                const cartItemsList = document.getElementById("cartItems");
+                cartItemsList.innerHTML = '';
+                for (const [name, details] of Object.entries(this.items)) {
+                    const listItem = document.createElement("li");
+                    listItem.innerHTML = `${name} - \$${details.price} x ${details.quantity}
+                        <button onclick="cart.removeItem('${name}')" class="removeFromCart">Remove</button>`;
+                    cartItemsList.appendChild(listItem);
+                }
+            }
+        }
+
+        const cart = new Cart();
+
+        document.querySelectorAll('.addToCart').forEach(button => {
+            button.addEventListener('click', function() {
+                const productDiv = this.parentNode;
+                const productName = productDiv.querySelector('h4').innerText;
+                const productPrice = productDiv.querySelector('.product-price').innerText.replace('$', '');
+                cart.addItem(productName, productPrice);
+            });
+        });
+    </script>
+</body>
 </html>
+
 
 <!--Sites for the hoodie images
 

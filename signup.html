@@ -1,0 +1,96 @@
+
+<!-- signup page -->
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+        <img src="images/logo.png" alt="Website Logo" width="100px">
+        <h2 style="color: white;">HoodHaven</h2>
+    </header>
+
+<body >
+    <center><div>
+        <a href= "index.html">Home Page</a>
+        <a href= "contact.html">Contact Info</a>
+        <a href="login.html">Login Page</a>
+        <a href="products.html">   Product Page</a>
+    </div></center>
+
+    <main>
+        <section class="signup">  
+            <form action="#" method="post" onsubmit="validateForm(); return false;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter password">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Enter password">
+
+                <label for="email">Email:</label>
+                <div class="email-button-group">
+                    <input type="email" id="email" name="email" required placeholder="Enter email">
+                    <button type="submit" class="signup-button">Sign-up</button>
+                </div>
+            </form>
+        </section>
+        <div id="messageBox">
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <footer style="text-align: center;">
+        &copy; 2024 HoodHaven. All rights reserved.
+    </footer>
+    
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            var email = document.getElementById("email").value;
+            var usernamePattern = /^[a-zA-Z][a-zA-Z0-9-_]{2,19}$/;
+            var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?=.*[!@#$%^&*()-_=+\[\]{}|;:'",.<>?/`~]).{8,}$/;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            var messageBox = document.getElementById("messageBox");
+            var messageText = document.getElementById("message");
+            messageBox.style.display = "none";
+            messageText.textContent = "";
+            var count = 0;
+            var userMess = "";
+            var passMess = "";
+            var passConMess = "";
+            var emailMess = ""
+            if (!usernamePattern.test(username)) {
+                userMess = "Check the username.<br><br>";
+                count++;
+            }
+            
+            if (!passwordPattern.test(password)) {
+                passMess = "Check the password.<br><br>";
+                count++;
+            }
+            
+            if (password !== confirmPassword) {
+                passConMess = "Passwords do not match.<br><br>";
+                count++;
+            }
+            
+            if (!emailPattern.test(email)) {
+                emailMess = "Check the email address.";
+                count++;
+            }
+            if(count === 0){
+                messageText.textContent = "Sign-up successful!";
+                messageBox.style.display = "block";
+            } else{
+                messageText.innerHTML  = userMess + passMess + passConMess + emailMess;
+                messageBox.style.display = "block";
+            }
+        }
+    </script>                 
+</body>
+</html>

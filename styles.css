@@ -115,14 +115,14 @@ main p a {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    width: calc(50% - 40px); /* Two products per line, considering padding and margin */
+    width: calc(50% - 40px); 
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
 }
 
 .product:hover {
-    background-color: #ffffff; /* Change background color on hover */
+    background-color: #ffffff; 
 }
 
 .product-image {
@@ -148,7 +148,7 @@ main p a {
 }
 
 .addToCart:hover {
-    background-color: #45A049; /* Change background color on hover */
+    background-color: #45A049; 
 }
 
 main.productsPage {
@@ -189,11 +189,4 @@ main.contactsPage{
 
 .contact-method:hover{
     color: purple;
-}
-
-#messageBox {
-    border: 2px solid;
-    background-color: #f9f9f9;
-    padding: 10px;
-    margin: 20px;
 }
